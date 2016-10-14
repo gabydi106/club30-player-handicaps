@@ -288,11 +288,17 @@ html = response.content
 
 soup = BeautifulSoup(html)
 
+# Cell: Name
 name = soup.find('span', attrs={'class': 'nameHeader'}).text.strip()
-print name
+list_of_cells.append(name)
 
+# Cell: Index
 handicap = soup.find('span', attrs={'class': 'headr2'}).text.strip()
-print handicap
+list_of_cells.append(handicap)
+
+# Row = Cell: Name, Index
+list_of_rows.append(list_of_cells)
+
 
 # HING DOM
 
@@ -305,11 +311,16 @@ html = response.content
 
 soup = BeautifulSoup(html)
 
+# Cell: Name
 name = soup.find('span', attrs={'class': 'nameHeader'}).text.strip()
-print name
+list_of_cells.append(name)
 
+# Cell: Index
 handicap = soup.find('span', attrs={'class': 'headr2'}).text.strip()
-print handicap
+list_of_cells.append(handicap)
+
+# Row = Cell: Name, Index
+list_of_rows.append(list_of_cells)
 
 # JAVIER MIKE
 
@@ -322,11 +333,17 @@ html = response.content
 
 soup = BeautifulSoup(html)
 
+# Cell: Name
 name = soup.find('span', attrs={'class': 'nameHeader'}).text.strip()
-print name
+list_of_cells.append(name)
 
+# Cell: Index
 handicap = soup.find('span', attrs={'class': 'headr2'}).text.strip()
-print handicap
+list_of_cells.append(handicap)
+
+# Row = Cell: Name, Index
+list_of_rows.append(list_of_cells)
+
 
 # LEE GREGG
 
@@ -339,11 +356,16 @@ html = response.content
 
 soup = BeautifulSoup(html)
 
+# Cell: Name
 name = soup.find('span', attrs={'class': 'nameHeader'}).text.strip()
-print name
+list_of_cells.append(name)
 
+# Cell: Index
 handicap = soup.find('span', attrs={'class': 'headr2'}).text.strip()
-print handicap
+list_of_cells.append(handicap)
+
+# Row = Cell: Name, Index
+list_of_rows.append(list_of_cells)
 
 
 # LEE WALLIE
@@ -357,11 +379,17 @@ html = response.content
 
 soup = BeautifulSoup(html)
 
+# Cell: Name
 name = soup.find('span', attrs={'class': 'nameHeader'}).text.strip()
-print name
+list_of_cells.append(name)
 
+# Cell: Index
 handicap = soup.find('span', attrs={'class': 'headr2'}).text.strip()
-print handicap
+list_of_cells.append(handicap)
+
+# Row = Cell: Name, Index
+list_of_rows.append(list_of_cells)
+
 
 # LI SUN YEE
 
@@ -374,11 +402,17 @@ html = response.content
 
 soup = BeautifulSoup(html)
 
+# Cell: Name
 name = soup.find('span', attrs={'class': 'nameHeader'}).text.strip()
-print name
+list_of_cells.append(name)
 
+# Cell: Index
 handicap = soup.find('span', attrs={'class': 'headr2'}).text.strip()
-print handicap
+list_of_cells.append(handicap)
+
+# Row = Cell: Name, Index
+list_of_rows.append(list_of_cells)
+
 
 
 # LIM ROGER
@@ -392,11 +426,16 @@ html = response.content
 
 soup = BeautifulSoup(html)
 
+# Cell: Name
 name = soup.find('span', attrs={'class': 'nameHeader'}).text.strip()
-print name
+list_of_cells.append(name)
 
+# Cell: Index
 handicap = soup.find('span', attrs={'class': 'headr2'}).text.strip()
-print handicap
+list_of_cells.append(handicap)
+
+# Row = Cell: Name, Index
+list_of_rows.append(list_of_cells)
 
 
 # MOON ALEX KIHO
@@ -410,11 +449,17 @@ html = response.content
 
 soup = BeautifulSoup(html)
 
+# Cell: Name
 name = soup.find('span', attrs={'class': 'nameHeader'}).text.strip()
-print name
+list_of_cells.append(name)
 
+# Cell: Index
 handicap = soup.find('span', attrs={'class': 'headr2'}).text.strip()
-print handicap
+list_of_cells.append(handicap)
+
+# Row = Cell: Name, Index
+list_of_rows.append(list_of_cells)
+
 
 
 # NG CIP
@@ -428,11 +473,17 @@ html = response.content
 
 soup = BeautifulSoup(html)
 
+# Cell: Name
 name = soup.find('span', attrs={'class': 'nameHeader'}).text.strip()
-print name
+list_of_cells.append(name)
 
+# Cell: Index
 handicap = soup.find('span', attrs={'class': 'headr2'}).text.strip()
-print handicap
+list_of_cells.append(handicap)
+
+# Row = Cell: Name, Index
+list_of_rows.append(list_of_cells)
+
 
 
 # ONG MANUEL JR
@@ -446,11 +497,17 @@ html = response.content
 
 soup = BeautifulSoup(html)
 
+# Cell: Name
 name = soup.find('span', attrs={'class': 'nameHeader'}).text.strip()
-print name
+list_of_cells.append(name)
 
+# Cell: Index
 handicap = soup.find('span', attrs={'class': 'headr2'}).text.strip()
-print handicap
+list_of_cells.append(handicap)
+
+# Row = Cell: Name, Index
+list_of_rows.append(list_of_cells)
+
 
 
 # ONG NEIL
@@ -464,11 +521,16 @@ html = response.content
 
 soup = BeautifulSoup(html)
 
+# Cell: Name
 name = soup.find('span', attrs={'class': 'nameHeader'}).text.strip()
-print name
+list_of_cells.append(name)
 
+# Cell: Index
 handicap = soup.find('span', attrs={'class': 'headr2'}).text.strip()
-print handicap
+list_of_cells.append(handicap)
+
+# Row = Cell: Name, Index
+list_of_rows.append(list_of_cells)
 
 # SANDOVAL RICKY
 
@@ -481,11 +543,17 @@ html = response.content
 
 soup = BeautifulSoup(html)
 
+# Cell: Name
 name = soup.find('span', attrs={'class': 'nameHeader'}).text.strip()
-print name
+list_of_cells.append(name)
 
+# Cell: Index
 handicap = soup.find('span', attrs={'class': 'headr2'}).text.strip()
-print handicap
+list_of_cells.append(handicap)
+
+# Row = Cell: Name, Index
+list_of_rows.append(list_of_cells)
+
 
 # SANTOS DANILO
 
@@ -498,11 +566,17 @@ html = response.content
 
 soup = BeautifulSoup(html)
 
+# Cell: Name
 name = soup.find('span', attrs={'class': 'nameHeader'}).text.strip()
-print name
+list_of_cells.append(name)
 
+# Cell: Index
 handicap = soup.find('span', attrs={'class': 'headr2'}).text.strip()
-print handicap
+list_of_cells.append(handicap)
+
+# Row = Cell: Name, Index
+list_of_rows.append(list_of_cells)
+
 
 # SO JACK
 
@@ -515,11 +589,17 @@ html = response.content
 
 soup = BeautifulSoup(html)
 
+# Cell: Name
 name = soup.find('span', attrs={'class': 'nameHeader'}).text.strip()
-print name
+list_of_cells.append(name)
 
+# Cell: Index
 handicap = soup.find('span', attrs={'class': 'headr2'}).text.strip()
-print handicap
+list_of_cells.append(handicap)
+
+# Row = Cell: Name, Index
+list_of_rows.append(list_of_cells)
+
 
 # TAN EDDIE
 
@@ -532,11 +612,17 @@ html = response.content
 
 soup = BeautifulSoup(html)
 
+# Cell: Name
 name = soup.find('span', attrs={'class': 'nameHeader'}).text.strip()
-print name
+list_of_cells.append(name)
 
+# Cell: Index
 handicap = soup.find('span', attrs={'class': 'headr2'}).text.strip()
-print handicap
+list_of_cells.append(handicap)
+
+# Row = Cell: Name, Index
+list_of_rows.append(list_of_cells)
+
 
 # TAN JEREMY
 
@@ -549,11 +635,17 @@ html = response.content
 
 soup = BeautifulSoup(html)
 
+# Cell: Name
 name = soup.find('span', attrs={'class': 'nameHeader'}).text.strip()
-print name
+list_of_cells.append(name)
 
+# Cell: Index
 handicap = soup.find('span', attrs={'class': 'headr2'}).text.strip()
-print handicap
+list_of_cells.append(handicap)
+
+# Row = Cell: Name, Index
+list_of_rows.append(list_of_cells)
+
 
 
 # TAN TOMMY
@@ -567,11 +659,16 @@ html = response.content
 
 soup = BeautifulSoup(html)
 
+# Cell: Name
 name = soup.find('span', attrs={'class': 'nameHeader'}).text.strip()
-print name
+list_of_cells.append(name)
 
+# Cell: Index
 handicap = soup.find('span', attrs={'class': 'headr2'}).text.strip()
-print handicap
+list_of_cells.append(handicap)
+
+# Row = Cell: Name, Index
+list_of_rows.append(list_of_cells)
 
 
 # WEE PATRICK
@@ -585,11 +682,17 @@ html = response.content
 
 soup = BeautifulSoup(html)
 
+# Cell: Name
 name = soup.find('span', attrs={'class': 'nameHeader'}).text.strip()
-print name
+list_of_cells.append(name)
 
+# Cell: Index
 handicap = soup.find('span', attrs={'class': 'headr2'}).text.strip()
-print handicap
+list_of_cells.append(handicap)
+
+# Row = Cell: Name, Index
+list_of_rows.append(list_of_cells)
+
 
 
 # YUN DAVID JEOUNG
@@ -603,11 +706,16 @@ html = response.content
 
 soup = BeautifulSoup(html)
 
+# Cell: Name
 name = soup.find('span', attrs={'class': 'nameHeader'}).text.strip()
-print name
+list_of_cells.append(name)
 
+# Cell: Index
 handicap = soup.find('span', attrs={'class': 'headr2'}).text.strip()
-print handicap
+list_of_cells.append(handicap)
+
+# Row = Cell: Name, Index
+list_of_rows.append(list_of_cells)
 
 
 
