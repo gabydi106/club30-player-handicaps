@@ -187,6 +187,11 @@ list_of_cells.append(handicap)
 list_of_rows.append(list_of_cells)
 
 
+# CO ALBERT
+
+list_of_cells = []
+list_of_cells.append("ALBERT CO")
+
 # ALEX DI
 
 # Initialize new row
@@ -721,7 +726,7 @@ list_of_rows.append(list_of_cells)
 
 
 # Write to CSV
-outfile = open("./club30.csv","wb")
+outfile = open("./club30-HCP.csv","wb")
 writer = csv.writer(outfile)
 writer.writerow(["PLAYER NAME", "HCP INDEX"])
 writer.writerows(list_of_rows)
