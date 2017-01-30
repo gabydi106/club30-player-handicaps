@@ -65,8 +65,12 @@ Your computer needs the following tools installed and working to run the file.
 
 Extract more information:
 
-- Tee mount
-- Course specific handicaps
+- Tee mount (completed Nov 2016)
+- Course specific handicaps (completed Oct 2016)
+
+Automatic Updates
+
+- integrate with cron job to autonomously update monthly handicaps
 
  
 ### Disclaimers
