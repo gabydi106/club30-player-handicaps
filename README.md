@@ -1,4 +1,5 @@
 # Feb 2017 Player Handicaps
+
 | PLAYER NAME                  | HCP INDEX | MOUNT | EAST | WEST | MIDLANDS |
 |------------------------------|-----------|-------|------|------|----------|
 | Raymund C. ALMEDA            | 18.4      | BLUE  | 23   | 21   | 21       |
