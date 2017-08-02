@@ -2,6 +2,12 @@ import csv
 import requests
 from BeautifulSoup import BeautifulSoup
 
+eastSlopeBlue = int(142)
+westSlopeBlue = int(131)
+eastSlopeWhite = int(139)
+westSlopeWhite = int(125)
+midlandsSlopeBlue = int(127)
+midlandsSlopeWhite = int(123)
 
 list_of_rows = []
 
@@ -23,6 +29,18 @@ list_of_cells.append(name)
 # Cell: Index
 handicap = soup.find('span', attrs={'class': 'headr2'}).text.strip()
 list_of_cells.append(handicap)
+
+list_of_cells.append('BLUE')
+
+east = float(handicap)*eastSlopeBlue/113
+list_of_cells.append(round(east))
+
+west = float(handicap)*westSlopeBlue/113
+list_of_cells.append(round(west))
+
+midlands = float(handicap)*midlandsSlopeBlue/113
+list_of_cells.append(round(midlands))
+
 
 # Row = Cell: Name, Index
 list_of_rows.append(list_of_cells)
@@ -46,6 +64,17 @@ list_of_cells.append(name)
 # Cell: Index
 handicap = soup.find('span', attrs={'class': 'headr2'}).text.strip()
 list_of_cells.append(handicap)
+
+list_of_cells.append('BLUE')
+
+east = float(handicap)*eastSlopeBlue/113
+list_of_cells.append(round(east))
+
+west = float(handicap)*westSlopeBlue/113
+list_of_cells.append(round(west))
+
+midlands = float(handicap)*midlandsSlopeBlue/113
+list_of_cells.append(round(midlands))
 
 # Row = Cell: Name, Index
 list_of_rows.append(list_of_cells)
@@ -71,6 +100,17 @@ list_of_cells.append(name)
 handicap = soup.find('span', attrs={'class': 'headr2'}).text.strip()
 list_of_cells.append(handicap)
 
+list_of_cells.append('BLUE')
+
+east = float(handicap)*eastSlopeBlue/113
+list_of_cells.append(round(east))
+
+west = float(handicap)*westSlopeBlue/113
+list_of_cells.append(round(west))
+
+midlands = float(handicap)*midlandsSlopeBlue/113
+list_of_cells.append(round(midlands))
+
 # Row = Cell: Name, Index
 list_of_rows.append(list_of_cells)
 
@@ -79,7 +119,7 @@ list_of_rows.append(list_of_cells)
 # Initialize new row
 list_of_cells = []
 
-url = 'http://www.unhs.ph/MemberPage.aspx?id=594'
+url = 'http://www.unhs.ph/MemberPage.aspx?id=412'
 response = requests.get(url)
 html = response.content
 
@@ -92,6 +132,17 @@ list_of_cells.append(name)
 # Cell: Index
 handicap = soup.find('span', attrs={'class': 'headr2'}).text.strip()
 list_of_cells.append(handicap)
+
+list_of_cells.append('BLUE')
+
+east = float(handicap)*eastSlopeBlue/113
+list_of_cells.append(round(east))
+
+west = float(handicap)*westSlopeBlue/113
+list_of_cells.append(round(west))
+
+midlands = float(handicap)*midlandsSlopeBlue/113
+list_of_cells.append(round(midlands))
 
 # Row = Cell: Name, Index
 list_of_rows.append(list_of_cells)
@@ -116,6 +167,17 @@ list_of_cells.append(name)
 handicap = soup.find('span', attrs={'class': 'headr2'}).text.strip()
 list_of_cells.append(handicap)
 
+list_of_cells.append('BLUE')
+
+east = float(handicap)*eastSlopeBlue/113
+list_of_cells.append(round(east))
+
+west = float(handicap)*westSlopeBlue/113
+list_of_cells.append(round(west))
+
+midlands = float(handicap)*midlandsSlopeBlue/113
+list_of_cells.append(round(midlands))
+
 # Row = Cell: Name, Index
 list_of_rows.append(list_of_cells)
 
@@ -137,6 +199,17 @@ list_of_cells.append(name)
 # Cell: Index
 handicap = soup.find('span', attrs={'class': 'headr2'}).text.strip()
 list_of_cells.append(handicap)
+
+list_of_cells.append('BLUE')
+
+east = float(handicap)*eastSlopeWhite/113
+list_of_cells.append(round(east))
+
+west = float(handicap)*westSlopeWhite/113
+list_of_cells.append(round(west))
+
+midlands = float(handicap)*midlandsSlopeWhite/113
+list_of_cells.append(round(midlands))
 
 # Row = Cell: Name, Index
 list_of_rows.append(list_of_cells)
@@ -161,6 +234,17 @@ list_of_cells.append(name)
 handicap = soup.find('span', attrs={'class': 'headr2'}).text.strip()
 list_of_cells.append(handicap)
 
+list_of_cells.append('BLUE')
+
+east = float(handicap)*eastSlopeBlue/113
+list_of_cells.append(round(east))
+
+west = float(handicap)*westSlopeBlue/113
+list_of_cells.append(round(west))
+
+midlands = float(handicap)*midlandsSlopeBlue/113
+list_of_cells.append(round(midlands))
+
 # Row = Cell: Name, Index
 list_of_rows.append(list_of_cells)
 
@@ -183,14 +267,20 @@ list_of_cells.append(name)
 handicap = soup.find('span', attrs={'class': 'headr2'}).text.strip()
 list_of_cells.append(handicap)
 
+list_of_cells.append('WHITE')
+
+east = float(handicap)*eastSlopeWhite/113
+list_of_cells.append(round(east))
+
+west = float(handicap)*westSlopeWhite/113
+list_of_cells.append(round(west))
+
+midlands = float(handicap)*midlandsSlopeWhite/113
+list_of_cells.append(round(midlands))
+
 # Row = Cell: Name, Index
 list_of_rows.append(list_of_cells)
 
-
-# CO ALBERT
-
-list_of_cells = []
-list_of_cells.append("ALBERT CO")
 
 # ALEX DI
 
@@ -210,6 +300,17 @@ list_of_cells.append(name)
 # Cell: Index
 handicap = soup.find('span', attrs={'class': 'headr2'}).text.strip()
 list_of_cells.append(handicap)
+
+list_of_cells.append('BLUE')
+
+east = float(handicap)*eastSlopeBlue/113
+list_of_cells.append(round(east))
+
+west = float(handicap)*westSlopeBlue/113
+list_of_cells.append(round(west))
+
+midlands = float(handicap)*midlandsSlopeBlue/113
+list_of_cells.append(round(midlands))
 
 # Row = Cell: Name, Index
 list_of_rows.append(list_of_cells)
@@ -234,6 +335,17 @@ list_of_cells.append(name)
 handicap = soup.find('span', attrs={'class': 'headr2'}).text.strip()
 list_of_cells.append(handicap)
 
+list_of_cells.append('BLUE')
+
+east = float(handicap)*eastSlopeBlue/113
+list_of_cells.append(round(east))
+
+west = float(handicap)*westSlopeBlue/113
+list_of_cells.append(round(west))
+
+midlands = float(handicap)*midlandsSlopeBlue/113
+list_of_cells.append(round(midlands))
+
 # Row = Cell: Name, Index
 list_of_rows.append(list_of_cells)
 
@@ -242,7 +354,7 @@ list_of_rows.append(list_of_cells)
 # Initialize new row
 list_of_cells = []
 
-url = 'http://www.unhs.ph/MemberPage.aspx?id=27098'
+url = 'http://www.unhs.ph/MemberPage.aspx?id=21822'
 response = requests.get(url)
 html = response.content
 
@@ -255,6 +367,17 @@ list_of_cells.append(name)
 # Cell: Index
 handicap = soup.find('span', attrs={'class': 'headr2'}).text.strip()
 list_of_cells.append(handicap)
+
+list_of_cells.append('WHITE')
+
+east = float(handicap)*eastSlopeWhite/113
+list_of_cells.append(round(east))
+
+west = float(handicap)*westSlopeWhite/113
+list_of_cells.append(round(west))
+
+midlands = float(handicap)*midlandsSlopeWhite/113
+list_of_cells.append(round(midlands))
 
 # Row = Cell: Name, Index
 list_of_rows.append(list_of_cells)
@@ -277,6 +400,17 @@ list_of_cells.append(name)
 # Cell: Index
 handicap = soup.find('span', attrs={'class': 'headr2'}).text.strip()
 list_of_cells.append(handicap)
+
+list_of_cells.append('BLUE')
+
+east = float(handicap)*eastSlopeBlue/113
+list_of_cells.append(round(east))
+
+west = float(handicap)*westSlopeBlue/113
+list_of_cells.append(round(west))
+
+midlands = float(handicap)*midlandsSlopeBlue/113
+list_of_cells.append(round(midlands))
 
 # Row = Cell: Name, Index
 list_of_rows.append(list_of_cells)
@@ -301,9 +435,19 @@ list_of_cells.append(name)
 handicap = soup.find('span', attrs={'class': 'headr2'}).text.strip()
 list_of_cells.append(handicap)
 
+list_of_cells.append('BLUE')
+
+east = float(handicap)*eastSlopeBlue/113
+list_of_cells.append(round(east))
+
+west = float(handicap)*westSlopeBlue/113
+list_of_cells.append(round(west))
+
+midlands = float(handicap)*midlandsSlopeBlue/113
+list_of_cells.append(round(midlands))
+
 # Row = Cell: Name, Index
 list_of_rows.append(list_of_cells)
-
 
 # HING DOM
 
@@ -323,6 +467,17 @@ list_of_cells.append(name)
 # Cell: Index
 handicap = soup.find('span', attrs={'class': 'headr2'}).text.strip()
 list_of_cells.append(handicap)
+
+list_of_cells.append('BLUE')
+
+east = float(handicap)*eastSlopeBlue/113
+list_of_cells.append(round(east))
+
+west = float(handicap)*westSlopeBlue/113
+list_of_cells.append(round(west))
+
+midlands = float(handicap)*midlandsSlopeBlue/113
+list_of_cells.append(round(midlands))
 
 # Row = Cell: Name, Index
 list_of_rows.append(list_of_cells)
@@ -346,9 +501,19 @@ list_of_cells.append(name)
 handicap = soup.find('span', attrs={'class': 'headr2'}).text.strip()
 list_of_cells.append(handicap)
 
+list_of_cells.append('BLUE')
+
+east = float(handicap)*eastSlopeBlue/113
+list_of_cells.append(round(east))
+
+west = float(handicap)*westSlopeBlue/113
+list_of_cells.append(round(west))
+
+midlands = float(handicap)*midlandsSlopeBlue/113
+list_of_cells.append(round(midlands))
+
 # Row = Cell: Name, Index
 list_of_rows.append(list_of_cells)
-
 
 # LEE GREGG
 
@@ -368,6 +533,17 @@ list_of_cells.append(name)
 # Cell: Index
 handicap = soup.find('span', attrs={'class': 'headr2'}).text.strip()
 list_of_cells.append(handicap)
+
+list_of_cells.append('BLUE')
+
+east = float(handicap)*eastSlopeBlue/113
+list_of_cells.append(round(east))
+
+west = float(handicap)*westSlopeBlue/113
+list_of_cells.append(round(west))
+
+midlands = float(handicap)*midlandsSlopeBlue/113
+list_of_cells.append(round(midlands))
 
 # Row = Cell: Name, Index
 list_of_rows.append(list_of_cells)
@@ -392,8 +568,54 @@ list_of_cells.append(name)
 handicap = soup.find('span', attrs={'class': 'headr2'}).text.strip()
 list_of_cells.append(handicap)
 
+list_of_cells.append('BLUE')
+
+east = float(handicap)*eastSlopeBlue/113
+list_of_cells.append(round(east))
+
+west = float(handicap)*westSlopeBlue/113
+list_of_cells.append(round(west))
+
+midlands = float(handicap)*midlandsSlopeBlue/113
+list_of_cells.append(round(midlands))
+
 # Row = Cell: Name, Index
 list_of_rows.append(list_of_cells)
+
+
+# JIN HUN ROH
+
+# Initialize new row
+list_of_cells = []
+
+url = 'http://www.unhs.ph/MemberPage.aspx?id=25789'
+response = requests.get(url)
+html = response.content
+
+soup = BeautifulSoup(html)
+
+# Cell: Name
+name = soup.find('span', attrs={'class': 'nameHeader'}).text.strip()
+list_of_cells.append(name)
+
+# Cell: Index
+handicap = soup.find('span', attrs={'class': 'headr2'}).text.strip()
+list_of_cells.append(handicap)
+
+list_of_cells.append('BLUE')
+
+east = float(handicap)*eastSlopeBlue/113
+list_of_cells.append(round(east))
+
+west = float(handicap)*westSlopeBlue/113
+list_of_cells.append(round(west))
+
+midlands = float(handicap)*midlandsSlopeBlue/113
+list_of_cells.append(round(midlands))
+
+# Row = Cell: Name, Index
+list_of_rows.append(list_of_cells)
+
 
 
 # LI SUN YEE
@@ -415,9 +637,19 @@ list_of_cells.append(name)
 handicap = soup.find('span', attrs={'class': 'headr2'}).text.strip()
 list_of_cells.append(handicap)
 
+list_of_cells.append('WHITE')
+
+east = float(handicap)*eastSlopeWhite/113
+list_of_cells.append(round(east))
+
+west = float(handicap)*westSlopeWhite/113
+list_of_cells.append(round(west))
+
+midlands = float(handicap)*midlandsSlopeWhite/113
+list_of_cells.append(round(midlands))
+
 # Row = Cell: Name, Index
 list_of_rows.append(list_of_cells)
-
 
 
 # LIM ROGER
@@ -439,6 +671,17 @@ list_of_cells.append(name)
 handicap = soup.find('span', attrs={'class': 'headr2'}).text.strip()
 list_of_cells.append(handicap)
 
+list_of_cells.append('BLUE')
+
+east = float(handicap)*eastSlopeBlue/113
+list_of_cells.append(round(east))
+
+west = float(handicap)*westSlopeBlue/113
+list_of_cells.append(round(west))
+
+midlands = float(handicap)*midlandsSlopeBlue/113
+list_of_cells.append(round(midlands))
+
 # Row = Cell: Name, Index
 list_of_rows.append(list_of_cells)
 
@@ -456,15 +699,25 @@ soup = BeautifulSoup(html)
 
 # Cell: Name
 name = soup.find('span', attrs={'class': 'nameHeader'}).text.strip()
-list_of_cells.append(name)
+list_of_cells.append('Alex Moon')
 
 # Cell: Index
 handicap = soup.find('span', attrs={'class': 'headr2'}).text.strip()
 list_of_cells.append(handicap)
 
+list_of_cells.append('BLUE')
+
+east = float(handicap)*eastSlopeBlue/113
+list_of_cells.append(round(east))
+
+west = float(handicap)*westSlopeBlue/113
+list_of_cells.append(round(west))
+
+midlands = float(handicap)*midlandsSlopeBlue/113
+list_of_cells.append(round(midlands))
+
 # Row = Cell: Name, Index
 list_of_rows.append(list_of_cells)
-
 
 
 # NG CIP
@@ -486,9 +739,19 @@ list_of_cells.append(name)
 handicap = soup.find('span', attrs={'class': 'headr2'}).text.strip()
 list_of_cells.append(handicap)
 
+list_of_cells.append('WHITE')
+
+east = float(handicap)*eastSlopeWhite/113
+list_of_cells.append(round(east))
+
+west = float(handicap)*westSlopeWhite/113
+list_of_cells.append(round(west))
+
+midlands = float(handicap)*midlandsSlopeBlue/113
+list_of_cells.append(round(midlands))
+
 # Row = Cell: Name, Index
 list_of_rows.append(list_of_cells)
-
 
 
 # ONG MANUEL JR
@@ -504,15 +767,26 @@ soup = BeautifulSoup(html)
 
 # Cell: Name
 name = soup.find('span', attrs={'class': 'nameHeader'}).text.strip()
-list_of_cells.append(name)
+list_of_cells.append('Jun Ong')
 
 # Cell: Index
 handicap = soup.find('span', attrs={'class': 'headr2'}).text.strip()
 list_of_cells.append(handicap)
 
+list_of_cells.append('BLUE')
+
+
+east = float(handicap)*eastSlopeBlue/113
+list_of_cells.append(round(east))
+
+west = float(handicap)*westSlopeBlue/113
+list_of_cells.append(round(west))
+
+midlands = float(handicap)*midlandsSlopeBlue/113
+list_of_cells.append(round(midlands))
+
 # Row = Cell: Name, Index
 list_of_rows.append(list_of_cells)
-
 
 
 # ONG NEIL
@@ -533,6 +807,17 @@ list_of_cells.append(name)
 # Cell: Index
 handicap = soup.find('span', attrs={'class': 'headr2'}).text.strip()
 list_of_cells.append(handicap)
+
+list_of_cells.append('BLUE')
+
+east = float(handicap)*eastSlopeBlue/113
+list_of_cells.append(round(east))
+
+west = float(handicap)*westSlopeBlue/113
+list_of_cells.append(round(west))
+
+midlands = float(handicap)*midlandsSlopeBlue/113
+list_of_cells.append(round(midlands))
 
 # Row = Cell: Name, Index
 list_of_rows.append(list_of_cells)
@@ -556,9 +841,19 @@ list_of_cells.append(name)
 handicap = soup.find('span', attrs={'class': 'headr2'}).text.strip()
 list_of_cells.append(handicap)
 
+list_of_cells.append('BLUE')
+
+east = float(handicap)*eastSlopeBlue/113
+list_of_cells.append(round(east))
+
+west = float(handicap)*westSlopeBlue/113
+list_of_cells.append(round(west))
+
+midlands = float(handicap)*midlandsSlopeBlue/113
+list_of_cells.append(round(midlands))
+
 # Row = Cell: Name, Index
 list_of_rows.append(list_of_cells)
-
 
 # SANTOS DANILO
 
@@ -579,13 +874,22 @@ list_of_cells.append(name)
 handicap = soup.find('span', attrs={'class': 'headr2'}).text.strip()
 list_of_cells.append(handicap)
 
+list_of_cells.append('WHITE')
+
+east = float(handicap)*eastSlopeWhite/113
+list_of_cells.append(round(east))
+
+west = float(handicap)*westSlopeWhite/113
+list_of_cells.append(round(west))
+
+midlands = float(handicap)*midlandsSlopeWhite/113
+list_of_cells.append(round(midlands))
+
 # Row = Cell: Name, Index
 list_of_rows.append(list_of_cells)
 
-
 # SO JACK
 
-# Initialize new row
 list_of_cells = []
 
 url = 'http://www.unhs.ph/MemberPage.aspx?id=22224'
@@ -602,9 +906,19 @@ list_of_cells.append(name)
 handicap = soup.find('span', attrs={'class': 'headr2'}).text.strip()
 list_of_cells.append(handicap)
 
+list_of_cells.append('BLUE')
+
+east = float(handicap)*eastSlopeWhite/113
+list_of_cells.append(round(east))
+
+west = float(handicap)*westSlopeWhite/113
+list_of_cells.append(round(west))
+
+midlands = float(handicap)*midlandsSlopeWhite/113
+list_of_cells.append(round(midlands))
+
 # Row = Cell: Name, Index
 list_of_rows.append(list_of_cells)
-
 
 # TAN EDDIE
 
@@ -625,9 +939,19 @@ list_of_cells.append(name)
 handicap = soup.find('span', attrs={'class': 'headr2'}).text.strip()
 list_of_cells.append(handicap)
 
+list_of_cells.append('WHITE')
+
+east = float(handicap)*eastSlopeWhite/113
+list_of_cells.append(round(east))
+
+west = float(handicap)*westSlopeWhite/113
+list_of_cells.append(round(west))
+
+midlands = float(handicap)*midlandsSlopeBlue/113
+list_of_cells.append(round(midlands))
+
 # Row = Cell: Name, Index
 list_of_rows.append(list_of_cells)
-
 
 # TAN JEREMY
 
@@ -648,10 +972,52 @@ list_of_cells.append(name)
 handicap = soup.find('span', attrs={'class': 'headr2'}).text.strip()
 list_of_cells.append(handicap)
 
+list_of_cells.append('BLUE')
+
+east = float(handicap)*eastSlopeBlue/113
+list_of_cells.append(round(east))
+
+west = float(handicap)*westSlopeBlue/113
+list_of_cells.append(round(west))
+
+midlands = float(handicap)*midlandsSlopeBlue/113
+list_of_cells.append(round(midlands))
+
 # Row = Cell: Name, Index
 list_of_rows.append(list_of_cells)
 
+# TAN SQUARE
 
+# Initialize new row
+list_of_cells = []
+
+url = 'http://www.unhs.ph/MemberPage.aspx?id=22246'
+response = requests.get(url)
+html = response.content
+
+soup = BeautifulSoup(html)
+
+# Cell: Name
+name = 'SQUARE TAN'
+list_of_cells.append(name)
+
+# Cell: Index
+handicap = soup.find('span', attrs={'class': 'headr2'}).text.strip()
+list_of_cells.append(handicap)
+
+list_of_cells.append('BLUE')
+
+east = float(handicap)*eastSlopeBlue/113
+list_of_cells.append(round(east))
+
+west = float(handicap)*westSlopeBlue/113
+list_of_cells.append(round(west))
+
+midlands = float(handicap)*midlandsSlopeBlue/113
+list_of_cells.append(round(midlands))
+
+# Row = Cell: Name, Index
+list_of_rows.append(list_of_cells)
 
 # TAN TOMMY
 
@@ -671,6 +1037,17 @@ list_of_cells.append(name)
 # Cell: Index
 handicap = soup.find('span', attrs={'class': 'headr2'}).text.strip()
 list_of_cells.append(handicap)
+
+list_of_cells.append('WHITE')
+
+east = float(handicap)*eastSlopeWhite/113
+list_of_cells.append(round(east))
+
+west = float(handicap)*westSlopeWhite/113
+list_of_cells.append(round(west))
+
+midlands = float(handicap)*midlandsSlopeWhite/113
+list_of_cells.append(round(midlands))
 
 # Row = Cell: Name, Index
 list_of_rows.append(list_of_cells)
@@ -695,9 +1072,19 @@ list_of_cells.append(name)
 handicap = soup.find('span', attrs={'class': 'headr2'}).text.strip()
 list_of_cells.append(handicap)
 
+list_of_cells.append('BLUE')
+
+east = float(handicap)*eastSlopeBlue/113
+list_of_cells.append(round(east))
+
+west = float(handicap)*westSlopeBlue/113
+list_of_cells.append(round(west))
+
+midlands = float(handicap)*midlandsSlopeBlue/113
+list_of_cells.append(round(midlands))
+
 # Row = Cell: Name, Index
 list_of_rows.append(list_of_cells)
-
 
 
 # YUN DAVID JEOUNG
@@ -719,15 +1106,213 @@ list_of_cells.append(name)
 handicap = soup.find('span', attrs={'class': 'headr2'}).text.strip()
 list_of_cells.append(handicap)
 
+list_of_cells.append('BLUE')
+
+east = float(handicap)*eastSlopeBlue/113
+list_of_cells.append(round(east))
+
+west = float(handicap)*westSlopeBlue/113
+list_of_cells.append(round(west))
+
+midlands = float(handicap)*midlandsSlopeBlue/113
+list_of_cells.append(round(midlands))
+
+# Row = Cell: Name, Index
+list_of_rows.append(list_of_cells)
+
+# NONOY TAN
+
+# Initialize new row
+list_of_cells = []
+
+url = 'http://www.unhs.ph/MemberPage.aspx?id=27574'
+response = requests.get(url)
+html = response.content
+
+soup = BeautifulSoup(html)
+
+# Cell: Name
+name = soup.find('span', attrs={'class': 'nameHeader'}).text.strip()
+list_of_cells.append(name)
+
+# Cell: Index
+handicap = soup.find('span', attrs={'class': 'headr2'}).text.strip()
+list_of_cells.append(handicap)
+
+list_of_cells.append('BLUE')
+
+east = float(handicap)*eastSlopeWhite/113
+list_of_cells.append(round(east))
+
+west = float(handicap)*westSlopeWhite/113
+list_of_cells.append(round(west))
+
+midlands = float(handicap)*midlandsSlopeWhite/113
+list_of_cells.append(round(midlands))
+
+# Row = Cell: Name, Index
+list_of_rows.append(list_of_cells)
+
+# BENJIE GUEVARA
+
+# Initialize new row
+list_of_cells = []
+
+url = 'http://www.unhs.ph/MemberPage.aspx?id=27173'
+response = requests.get(url)
+html = response.content
+
+soup = BeautifulSoup(html)
+
+# Cell: Name
+name = soup.find('span', attrs={'class': 'nameHeader'}).text.strip()
+list_of_cells.append(name)
+
+# Cell: Index
+handicap = soup.find('span', attrs={'class': 'headr2'}).text.strip()
+list_of_cells.append(handicap)
+
+list_of_cells.append('BLUE')
+
+east = float(handicap)*eastSlopeBlue/113
+list_of_cells.append(round(east))
+
+west = float(handicap)*westSlopeBlue/113
+list_of_cells.append(round(west))
+
+midlands = float(handicap)*midlandsSlopeBlue/113
+list_of_cells.append(round(midlands))
+
+# Row = Cell: Name, Index
+list_of_rows.append(list_of_cells)
+
+# ALBERT CO
+
+# Initialize new row
+list_of_cells = []
+
+# url = 'http://www.unhs.ph/MemberPage.aspx?id='
+# response = requests.get(url)
+# html = response.content
+
+# soup = BeautifulSoup(html)
+
+# Cell: Name
+name = 'ALBERT CO -- not updated'
+list_of_cells.append(name)
+
+# Cell: Index
+handicap = '36.4'
+list_of_cells.append(handicap)
+
+list_of_cells.append('WHITE')
+
+east = float(handicap)*eastSlopeWhite/113
+list_of_cells.append(round(east))
+
+west = float(handicap)*westSlopeWhite/113
+list_of_cells.append(round(west))
+
+midlands = float(handicap)*midlandsSlopeWhite/113
+list_of_cells.append(round(midlands))
+
+# Row = Cell: Name, Index
+list_of_rows.append(list_of_cells)
+
+# KEVIN KIM
+
+# Initialize new row
+list_of_cells = []
+
+
+# Cell: Name
+name = 'KEVIN KIM -- not updated'
+list_of_cells.append(name)
+
+# Cell: Index
+handicap = '15.1'
+list_of_cells.append(handicap)
+
+list_of_cells.append('BLUE')
+
+east = float(handicap)*eastSlopeBlue/113
+list_of_cells.append(round(east))
+
+west = float(handicap)*westSlopeBlue/113
+list_of_cells.append(round(west))
+
+midlands = float(handicap)*midlandsSlopeBlue/113
+list_of_cells.append(round(midlands))
+
+# Row = Cell: Name, Index
+list_of_rows.append(list_of_cells)
+
+# GREG UY
+
+# Initialize new row
+list_of_cells = []
+
+
+# Cell: Name
+name = 'GREG UY -- no handicap'
+list_of_cells.append(name)
+
+# Cell: Index
+handicap = '0'
+list_of_cells.append(handicap)
+
+list_of_cells.append('WHITE')
+
+east = float(handicap)*eastSlopeWhite/113
+list_of_cells.append(round(east))
+
+west = float(handicap)*westSlopeWhite/113
+list_of_cells.append(round(west))
+
+midlands = float(handicap)*midlandsSlopeWhite/113
+list_of_cells.append(round(midlands))
+
 # Row = Cell: Name, Index
 list_of_rows.append(list_of_cells)
 
 
 
+# FERDINAND AGUILA
+# Initialize new row
+list_of_cells = []
+
+# url = 'http://www.unhs.ph/MemberPage.aspx?id=26852'
+# response = requests.get(url)
+# html = response.content
+
+# soup = BeautifulSoup(html)
+
+# Cell: Name
+name = 'FERDIDAND AGUILA'
+list_of_cells.append(name)
+
+# Cell: Index
+handicap = soup.find('span', attrs={'class': 'headr2'}).text.strip()
+list_of_cells.append(handicap)
+
+list_of_cells.append('WHITE')
+
+east = float(handicap)*eastSlopeWhite/113
+list_of_cells.append(round(east))
+
+west = float(handicap)*westSlopeWhite/113
+list_of_cells.append(round(west))
+
+midlands = float(handicap)*midlandsSlopeWhite/113
+list_of_cells.append(round(midlands))
+
+# Row = Cell: Name, Index
+list_of_rows.append(list_of_cells)
+
 
 # Write to CSV
-outfile = open("./club30-HCP.csv","wb")
+outfile = open("./club30-sept2017.csv","wb")
 writer = csv.writer(outfile)
-writer.writerow(["PLAYER NAME", "HCP INDEX"])
+writer.writerow(["PLAYER NAME", "HCP INDEX", "MOUNT", "EAST", "WEST", "MIDLANDS"])
 writer.writerows(list_of_rows)
 
